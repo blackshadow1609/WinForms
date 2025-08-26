@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsForms
 {
-	public partial class Form1 : Form
+	public partial class MainForm : Form
 	{
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
+		}
+
+		private void timer_Tick(object sender, EventArgs e)
+		{
+			labelCurrentTime.Text = DateTime.Now.ToString("HH:mm:ss");
 		}
 	}
 }
