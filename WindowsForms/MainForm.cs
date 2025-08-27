@@ -25,5 +25,10 @@ namespace WindowsForms
 			if(cbShowWeekDay.Checked)
 				labelCurrentTime.Text += $"\n{DateTime.Now.DayOfWeek}";
 		}
+
+		private void btnHideControls_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
