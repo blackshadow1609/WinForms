@@ -39,10 +39,10 @@
 			// labelCurrentTime
 			// 
 			this.labelCurrentTime.AutoSize = true;
-			this.labelCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.labelCurrentTime.Font = new System.Drawing.Font("GOST_type_A", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCurrentTime.Location = new System.Drawing.Point(13, 13);
 			this.labelCurrentTime.Name = "labelCurrentTime";
-			this.labelCurrentTime.Size = new System.Drawing.Size(316, 63);
+			this.labelCurrentTime.Size = new System.Drawing.Size(243, 58);
 			this.labelCurrentTime.TabIndex = 0;
 			this.labelCurrentTime.Text = "currentTime";
 			// 
@@ -54,10 +54,10 @@
 			// cbShowDate
 			// 
 			this.cbShowDate.AutoSize = true;
-			this.cbShowDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.cbShowDate.Font = new System.Drawing.Font("GOST_type_A", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.cbShowDate.Location = new System.Drawing.Point(24, 206);
 			this.cbShowDate.Name = "cbShowDate";
-			this.cbShowDate.Size = new System.Drawing.Size(311, 50);
+			this.cbShowDate.Size = new System.Drawing.Size(255, 47);
 			this.cbShowDate.TabIndex = 1;
 			this.cbShowDate.Text = "Показать дату";
 			this.cbShowDate.UseVisualStyleBackColor = true;
@@ -65,10 +65,10 @@
 			// cbShowWeekDay
 			// 
 			this.cbShowWeekDay.AutoSize = true;
-			this.cbShowWeekDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.cbShowWeekDay.Font = new System.Drawing.Font("GOST_type_A", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cbShowWeekDay.Location = new System.Drawing.Point(24, 262);
 			this.cbShowWeekDay.Name = "cbShowWeekDay";
-			this.cbShowWeekDay.Size = new System.Drawing.Size(464, 50);
+			this.cbShowWeekDay.Size = new System.Drawing.Size(357, 47);
 			this.cbShowWeekDay.TabIndex = 2;
 			this.cbShowWeekDay.Text = "Показать день недели";
 			this.cbShowWeekDay.UseVisualStyleBackColor = true;
