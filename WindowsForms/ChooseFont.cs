@@ -57,7 +57,6 @@ namespace WindowsForms
 
 		private void nudFontSize_ValueChanged(object sender, EventArgs e)
 		{
-			//lblExample.Font.Size = (float)(sender as NumericUpDown).Value;
 			SetFont(comboBoxChooseFont.SelectedItem.ToString(), (float)nudFontSize.Value);
 		}
 	}
