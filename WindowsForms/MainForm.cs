@@ -34,7 +34,7 @@ namespace WindowsForms
 			btnHideControls.Visible = visible;
 			this.ShowInTaskbar = visible;
 			this.TransparencyKey = visible ? Color.Empty : this.BackColor;
-			this.FormBorderStyle = visible ? FormBorderStyle.FixedDialog : FormBorderStyle.None;
+			this.FormBorderStyle = visible ? FormBorderStyle.FixedToolWindow : FormBorderStyle.None;
 			this.labelCurrentTime.BackColor = visible ? this.BackColor : Color.YellowGreen;
 		}
 		void ShowConsole(bool visible)
