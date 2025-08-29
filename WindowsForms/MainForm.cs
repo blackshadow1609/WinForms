@@ -9,15 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
 
 namespace WindowsForms
 {
 	public partial class MainForm : Form
 	{
+		ColorDialog cdBackColor;
+		ColorDialog cdForeColor;
 		public MainForm()
 		{
 			InitializeComponent();
 			ShowControls(cmShowControls.Checked);
+			cdBackColor = new ColorDialog();
+			cdForeColor = new ColorDialog();
 		}
 		void ShowControls(bool visible)
 		{
@@ -92,6 +97,28 @@ namespace WindowsForms
 			if (this.TopMost) return;
 			this.TopMost = true;
 			this.TopMost = false;
+		}
+
+		private void cmShowDate_CheckedChanged(object sender, EventArgs e)
+		{
+			cbShowDate.Checked = cmShowDate.Checked;
+		}
+
+		private void cmShowWeekday_CheckedChanged(object sender, EventArgs e)
+		{
+			cbShowWeekDay.Checked = cmShowWeekday.Checked;
+		}
+
+		private void cmBackColor_Click(object sender, EventArgs e)
+		{
+			cdBackColor.ShowDialog();
+			labelCurrentTime.BackColor = cdBackColor.Color;
+		}
+
+		private void cmForeColor_Click(object sender, EventArgs e)
+		{
+			cdForeColor.ShowDialog();
+			labelCurrentTime.ForeColor = cdForeColor.Color;
 		}
 	}
 }
