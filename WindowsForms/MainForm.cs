@@ -53,8 +53,6 @@ namespace WindowsForms
 		}
 		void ShowConsole(bool visible)
 		{
-			//bool console = visible ? AllocConsole() : FreeConsole();
-			//if (console) Console.WriteLine(console);
 			if (visible)
 				AllocConsole();
 			else
@@ -109,8 +107,6 @@ namespace WindowsForms
 			if (cbShowWeekDay.Checked)
 				labelCurrentTime.Text += $"\n{DateTime.Now.DayOfWeek}";
 			notifyIcon.Text = labelCurrentTime.Text;
-			//if (cmDebugConsole.Checked)
-			//Console.WriteLine(notifyIcon.Text);
 		}
 
 		private void btnHideControls_Click(object sender, EventArgs e)

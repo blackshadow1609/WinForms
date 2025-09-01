@@ -23,12 +23,10 @@ namespace WindowsForms
 			comboBoxChooseFont.Items.AddRange(GetFontListFromCurrentDirectoryByExtension("*.ttf"));
 			comboBoxChooseFont.Items.AddRange(GetFontListFromCurrentDirectoryByExtension("*.otf"));
 			comboBoxChooseFont.SelectedIndex = 0;
-			//comboBoxChooseFont.SelectedItem = comboBoxChooseFont.Items[0];
 		}
 		public ChooseFont(MainForm parent, string font_name, int font_size) : this()
 		{
 			nudFontSize.Value = font_size;
-			//comboBoxChooseFont.SelectedText = font_name;
 			int index = comboBoxChooseFont.FindStringExact(font_name);
 			comboBoxChooseFont.SelectedIndex = index;
 			Font = lblExample.Font;
@@ -69,7 +67,6 @@ namespace WindowsForms
 
 		private void nudFontSize_ValueChanged(object sender, EventArgs e)
 		{
-			//lblExample.Font.Size = (float)(sender as NumericUpDown).Value;
 			SetFont(comboBoxChooseFont.SelectedItem.ToString(), (float)nudFontSize.Value);
 		}
 	}
